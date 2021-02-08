@@ -11,8 +11,7 @@ class TestCase(unittest.TestCase):
             q3.fullName(1, "Name")
 
     def test3(self):
-        with self.assertRaises(AssertionError):
-            q3.fullName("", "Name")
+        self.assertEqual(q3.fullName("Bradley", ""), "Bradley")
 
 
 if __name__ == '__main__':
